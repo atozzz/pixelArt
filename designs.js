@@ -7,16 +7,15 @@
 // Your code goes here!
 
 
-var rows;
-var columns;
+
 
 function makeGrid() {
     var table = document.getElementById("pixel_canvas");
     table.innerHTML = "";
     while (table.rows.length > 1)
         table.deleteRow(0);
-    rows = document.getElementById("input_height").value;
-    columns = document.getElementById("input_width").value;
+    var rows = document.getElementById("input_height").value;
+    var columns = document.getElementById("input_width").value;
     for (let x = 0; x < rows; x++) {
         var row = table.insertRow(x);
         row.setAttribute("class", "row");
